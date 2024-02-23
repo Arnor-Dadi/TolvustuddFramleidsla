@@ -11,6 +11,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .img-container {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -27,9 +44,9 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Forsíða</a></li>
-											<li><a href="Verkefni1.html">Verkefni 1</a></li>
-											<li><a href="Verkefni2.html">Verkefni 2</a></li>
-											<li><a href="Verkefni3.html">Verkefni 3</a></li>
+											<li><a href="Verkefni1.html">Verkefni 1: Vefsíðugerð</a></li>
+											<li><a href="Verkefni2.html">Verkefni 2: Tölvustuddur skurður</a></li>
+											<li><a href="Verkefni3.html">Verkefni 3: 3D Prentun</a></li>
 											<li><a href="Lokaverkefni.html">Lokaverkefni</a></li>
 										</ul>
 									</div>
@@ -42,22 +59,69 @@
 					<article id="main">
 						<header>
 							<h2>Verkefni 3</h2>
-							<p>Nánar síðar</p>
+							<p>3D Skönnun og 3D Prentun</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
-
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
+								<h3>Verkefnislýsing</h3>
+								<p>Aftur skiptist verkefnið í tvennt. Fyrsti hlutinn snýst um að 3D skanna einhvern hlut t.d. með photogrammeteríu. Seinni hlutinn snýst síðan um að hanna módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttar framleiðslu (addative vs subtractive). Prenta á svo hlutinn (max 100g af plasti skv. slicer). Inni í þessu felst smá hópverkefni sem er að velja 3D prentara og ákvarða hönnunar reglur / þvinganir (t.d þörf á stuðning, veggþykkt, prentunar átt, yfirborðs gæði, innfylli...).</p>
+                                
+                                <hr />
+                                
+                                <h3>3D Skönnun</h3>
+                                
+                                <p>Ég ákvað að byrja á 3D skönnuninni. Fyrsta skrefið í því er að ákveða hvaða app eða vefsíðu maður ætlar að nota í það. Það fyrsta sem ég prófaði var að hlaða niður appinu <a href = https://www.qlone.pro/ >Qlone</a> í símann minn þar sem það er einn af hugbúnuðum sem mælt var með inni á Canvas.</p>
+                                
+                                <img src="images/qlone.jpg" alt="Description of the image" style="width: 20%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Þetta var hins vegar ekki nógu gott þar sem maður þurfti að borga fyrir flesta hlutina í appinu og maður þurfti einnig að prenta út einhverja mottu til að geta skannað hlutina inn. Eftir þetta tók ég eftir að það var önnur vefsíða sem mælt var með inn á Canvas en það var <a href = https://www.3dflow.net/3df-zephyr-free/ >3DF Zephyr</a> þannig að ég ákvað að prófa það. Ég hlóð hugbúnaðinum niður á tölvuna og fór að hugsa út í hvaða hlut ég vildi skanna. Ég leit í kringum mig í herberginu mínu og ákvað að lokum að velja gamla gítarinn minn til þess að skanna. Þegar maður opnar Zephyr lítur þetta svona út: </p>
+                                
+                                <img src="images/zephyr1.jpg" alt="Description of the image" style="width: 60%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Ég vissi ekkert hvar ég ætti að byrja í þessu þannig að ég fór á YouTube og leitaði að '3df zephyr tutorial' og fékk ég þá upp þetta <a href = https://www.youtube.com/watch?v=6Dlw2mJ_Yc8&t=313s >myndband</a>. Fyrsta skrefið er að taka margar myndir af hlutnum en í þessari fríu útgáfa er hámarkið 50 myndir þannig að ég fór í það verkefni að taka 50 myndir af gamla gítarnum mínum. Þegar ég var búinn að taka allar myndirnar ákvað ég að hlaða þeim öllum á Google Driveið mitt. Ég vildi næst fá allar myndirnar í zip file á tölvuna mínu þar sem þær voru frekar stórar þannig að ég leitaði að eftirfarandi: 'download a zip file from google drive' og fékk þá eftirfarandi <a href = https://www.youtube.com/watch?v=q7RzcE0jYmM >myndband</a> sem fór í gegnum öll skrefin sem þurfti að taka til þess.</p>
+                                
+                                <p>Næst valdi ég New Project undir Workflow í Zephyr. Þar inni gat ég dregið allar myndirnar inn í 'Photos selection'. Næst á maður að velja Category fyrir myndina en þar valdi ég bara General þar sem enginn af hinum möguleikunum átti við og ég valdi einnig Default settings fyrir hversu nákvæm ítrunin í hugbúnaðinum er.</p>
+                                
+                                <img src="images/zephyr2.jpg" alt="Description of the image" style="width: 60%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Þá var næsta skref að ýta á Run. Nánast um leið og ég ýtti á Run fékk ég hins vegar upp þennan glugga:</p>
+                                
+                                <img src="images/zephyr3.jpg" alt="Description of the image" style="width: 80%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Þetta virtist greinilega ekki hafa virkað hjá mér þannig að ég reyndi að breyta einhverjum stillingum en alltaf fékk ég upp sömu villumeldingu. Eftir að hafa eytt nokkrum tíma í að reyna finna út úr þessu ákvað ég að fara að reyna eitthvað annað. Ég fór í App Store í símanum og leitaði að 3D scanner og það sem kom upp efst var appið <a href = https://apps.apple.com/us/app/polycam-3d-scanner-lidar-360/id1532482376 >Polycam</a>.</p>
+                                
+                                <img src="images/polycam.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Ég ákvað að gefa því séns og hlaða því niður. Í þessu appi var möguleiki á því að taka myndband í kringum hlutinn sem breytti því í myndir sem gat búið til 3D skönnunina. Þetta var mjög einfalt og þægilegt ferli og þegar ég var búinn að taka myndbandið tók þetta aðeins nokkrar mínútur að búa til hlutinn. Fyrsta tilraunin í þessu hjá mér lítur svona út:</p>
+                                
+                                <img src="images/gitar.jpg" alt="Description of the image" style="width: 40%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Eins og má sjá er þetta ekki fullkomið þar sem að það eru nokkur göt í gítarnum og það hefur ekki tekist að skanna alveg allan hlutinn. Þetta eru hins vegar miklar framfarir frá því sem var í gangi áður en ég náði í þetta app. Ég ákvað nú að prófa að skanna einhvern aðeins minni hlut til að sjá hvort að appið gæti ráðið betur við það. Ég ákvað því að prófa að skanna boxið sem ég bjó til í verkefni 2 með geislaskeranum. Ég fór því í gegnum sama ferlið nema nú með boxið í stað gítarsins. Niðurstaðan úr þessu var hins vegar enn verri eins og má sjá á eftirfarandi mynd:</p>
+                                
+                                <img src="images/box5.jpg" alt="Description of the image" style="width: 40%; margin: 0 auto; display: block;"><br />
+                                
+                                <p>Ég ákvað að gera eina tilraun enn í að skanna eitthvað annað og ákvað að prófa vatnsflösku. Farið var í gegnum sama ferli og var niðurstaðan þessi:</p>
+                                
+                                <div class="clearfix">
+                                  <div class="img-container">
+                                  <img src="images/flaska1.jpg" alt="Description of the image" style="height: 50%; margin: 0 auto; display: block;">
+                                  </div>
+                                  <div class="img-container">
+                                  <img src="images/flaska2.jpg" alt="Description of the image" style="height: 50%; margin: 0 auto; display: block;">
+                                  </div>
+                                  <div class="img-container">
+                                  <img src="images/flaska3.jpg" alt="Description of the image" style="height: 50%; margin: 0 auto; display: block;">
+                                  </div>
+                                </div><br />
+                                
+                                <p>Þetta er alls ekki fullkomið en þetta er besta niðurstaðan sem ég gat fengið með þessu appi. Til að finna út úr því hvernig ætti að stilla myndum svona hlið við hlið fór ég inn á <a href = https://www.w3schools.com/howto/howto_css_images_side_by_side.asp >w3schools</a> og fylgdi leiðbeiningum þar.</p>
+                                
+                                <hr/>
+                                
+                                <h3>3D Prentun</h3>
+                                
+                                <p>Nú er komið að því að ákveða hvað ég vilji þrívíddarprenta. Skorður sem við höfum við hönnunina er að ekki væri hægt að framkvæma prentunina með frádráttar framleiðslu. Ég fór að hugsa hvort ég gæti búið til eitthvað sem væri tengt golfinu. Þannig að ég kíkti aðeins í settið mitt til að sjá hvort það væri eitthvað þar sem ég gæti gert eða hvort það væri eitthvað sem mig vantaði.</p>
 
 							</div>
 						</section>
